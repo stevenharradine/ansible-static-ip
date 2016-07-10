@@ -7,5 +7,6 @@
     group: root
     mode: 0644
   notify: Reboot network
+  when: not static_ip_dryrun
   tags:
     - network
