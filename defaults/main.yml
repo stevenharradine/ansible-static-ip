@@ -3,5 +3,5 @@ static_ip_dryrun: no
 static_ip_address: '192.168.2.2'
 static_ip_netmask: '255.255.255.0'
 static_ip_gateway: '192.168.2.1'
-static_ip_dns: '8.8.8.8 8.8.4.4'
+static_ip_dns: '192.168.2.1'
 static_ip_interface_name: "{% if ansible_distribution_major_version|int >= 16 %}enp0s3{% else %}eth0{% endif %}"
